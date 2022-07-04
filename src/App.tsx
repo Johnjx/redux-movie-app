@@ -2,6 +2,9 @@ import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
 import MovieHeader from './components/MovieHeader';
+import { Redirect, Route, Switch } from 'react-router-dom';
+import FavoriteMovieList from './components/FavoriteMovieList';
+import MovieList from './components/MovieList';
 
 type AppProps = {
   displayFavorites: boolean;
@@ -17,6 +20,27 @@ function App(props: AppProps) {
       </nav>
       <div>
       <MovieHeader/>
+      <div className="row">
+          {displayFavorites && <FavoriteMovieList/>}
+        
+          <Switch>
+            <Route exact path="/movies/add">
+              {/* <AddMovieForm /> */}
+            </Route>
+
+            <Route path="/movies/:id">
+              {/* <Movie /> */}
+            </Route>
+
+            <Route path="/movies">
+              <MovieList/>
+            </Route>
+
+            <Route path="/">
+              <Redirect to="/movies"/>
+            </Route>
+          </Switch>
+        </div>
       </div>
     </div>
   );

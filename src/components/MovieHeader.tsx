@@ -7,7 +7,7 @@ type MovieHeaderProps = {
     appTitle: string;
     displayFavorites: boolean;
     toggleFavorites: () => void;
-  }
+}
 
 const MovieHeader = (props: MovieHeaderProps) => {
     const handleToggFav = () => {

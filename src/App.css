@@ -79,6 +79,10 @@
   background-color: #BD4B4B;
 }
 
+td {
+  padding: 2%;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
