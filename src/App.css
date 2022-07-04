@@ -28,6 +28,57 @@
   color: #61dafb;
 }
 
+.navbar {
+  background-color: #252525;
+  color: white;
+  font-size: 1.5rem;
+  padding: 3%;
+}
+
+.table-title {        
+	padding-bottom: 15px;
+	background: lightgrey;
+	color:#566787;
+	border-radius: 3px 3px 0 0;
+}
+
+.table-title h2 {
+	margin: 5px 0 0;
+	font-size: 24px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.toggle {
+  padding: 2%;
+}
+
+.toggle:hover {
+  cursor: pointer;
+}
+
+.buttons {
+  width: 30%;
+}
+
+.btn {
+  margin-top: 2%;
+  margin-bottom: 3%;
+  padding: 2%;
+  text-decoration: none;
+}
+
+.divider {
+  margin: 2%;
+  padding: 4%;
+  height: 5%;
+  width: 40%;
+  background-color: #BD4B4B;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
