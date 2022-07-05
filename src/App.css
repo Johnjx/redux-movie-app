@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+td {
+  padding: 2%;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -73,14 +77,44 @@
 
 .divider {
   margin: 2%;
-  padding: 4%;
-  height: 5%;
+  padding: 2%;
+  height: .5%;
   width: 40%;
-  background-color: #BD4B4B;
+  background-color: #252525;
 }
 
-td {
+.fav-button {
+  padding: 1.8%;
+  border: 1px solid #BD4B4B;
+}
+
+.fav-button:hover {
+  background-color: lightgreen;
+}
+
+.fav-area {
+  padding: 10%;
+}
+
+.fav-container {
+  margin-top: 2%;
+  margin-right: 4%;
+  background-color: lightgrey;
+  width: 30vw;
+}
+
+.delete {
   padding: 2%;
+}
+
+.unfav {
+  padding: 2%;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+.savedButton {
+  margin-bottom: 5%
 }
 
 @keyframes App-logo-spin {

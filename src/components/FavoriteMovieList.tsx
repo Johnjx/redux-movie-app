@@ -12,15 +12,16 @@ type MovieHeaderProps = {
 
 const FavoriteMovieList = (props: MovieHeaderProps) => {
     
-    return (<div className="col-xs savedContainer">
+    return (<div className="col-xs savedContainer fav-container">
         <h5>Favorite Movies</h5>
         {
             props.favorites.map(movie=>{
-                return <div key={movie.id}>
-                    <Link className="btn btn-light savedButton" to={`/movies/${movie.id}`}>
+                return <div className='fav-area' key={movie.id}>
+                    <Link className="savedButton" to={`/movies/${movie.id}`}>
                         {movie.title}
-                        <span onClick={() => props.removeFavorite(movie.id)}><span>remove_circle</span></span>
-                    </Link> 
+                        <br/>
+                    </Link>
+                    <div className='unfav' onClick={() => props.removeFavorite(movie.id)}>⮿</div> 
                 </div>
             })
         }
