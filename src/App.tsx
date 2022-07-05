@@ -6,6 +6,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import FavoriteMovieList from './components/FavoriteMovieList';
 import MovieList from './components/MovieList';
 import MoviePage from './components/MoviePage';
+import AddMovieForm from './components/AddMovieForm';
 
 type AppProps = {
   displayFavorites: boolean;
@@ -26,7 +27,7 @@ function App(props: AppProps) {
         
           <Switch>
             <Route exact path="/movies/add">
-              {/* <AddMovieForm /> */}
+              <AddMovieForm />
             </Route>
 
             <Route path="/movies/:id">

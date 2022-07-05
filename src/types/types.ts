@@ -7,6 +7,14 @@ export interface Movie {
     description: string;
 }
 
+export interface PostMovie {
+    title: string;
+    director: string;
+    metascore: number;
+    genre: string; 
+    description?: string;
+}
+
 export interface MovieState {
     movies: Movie[];
     appTitle: string;
@@ -26,7 +34,7 @@ export enum ActionStrings {
 }
 
 export type Action =
-| {type: ActionStrings.ADD_MOVIE, payload:Movie}
+| {type: ActionStrings.ADD_MOVIE, payload:PostMovie}
 | {type: ActionStrings.DELETE_MOVIE, payload:number}
 | {type: ActionStrings.TOGGLE_FAVORITES}
 | {type: ActionStrings.ADD_FAVORITE, payload:Movie}

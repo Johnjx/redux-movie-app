@@ -13,7 +13,7 @@ type MovieProps = {
 }
 
 const MoviePage = (props: MovieProps) => {
-    const { id } = useParams<{id?: string}>();
+    const { id } = useParams<{id?: string}>(); //TS generic
     const { push } = useHistory();
 
     const movie = props.movies.find(movie=>movie.id===Number(id));
